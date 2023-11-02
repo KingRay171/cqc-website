@@ -10,7 +10,7 @@ export default function ExecBody() {
     return (
         <section className="flex justify-around bg-gray-200 text-black py-8">
             {execList.map(e => (
-                <div className="flex flex-col">
+                <div className="flex flex-col" key={e.linkedin}>
                     <Image src={e.image} alt={e.name} width={200} height={200} />
                     <h1>{e.name}</h1>
                     <h3>Major: {e.major}</h3>
